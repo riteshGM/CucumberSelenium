@@ -33,6 +33,10 @@ public class DataTable_StepDef {
 		}
 	}
 	
+	@Then("^Validate User (.*) is created$")
+	public void validate_user_created(String userName) {
+		System.out.println("User Name recieved in Parameter as "+userName);
+	}
 	@Then ("User is done")
 	public void user_is_done() {
 		System.out.println("user_is_done()");

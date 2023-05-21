@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue = {"StepDefinations"},
 		monochrome = true,
 		plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-		tags = ("@DataTable")
+		tags = ("@DataTableAsMap")
 		//dryRun = true
 		)
 public class CucumberRunner_ForDataTable {
