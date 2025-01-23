@@ -7,6 +7,7 @@ import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.BeforeStep;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
  * This Class Contains Common Methods Which we want to run before and after enach Scenario or a Test Case
@@ -38,6 +39,7 @@ public class BaseStep {
 	@BeforeAll
 	public static void beforeAllScenarios() {
 		System.out.println("This Method is Run before All Scenarios");
+		WebDriverManager.chromedriver().setup();
 	}
 	
 	@AfterAll

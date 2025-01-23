@@ -6,8 +6,8 @@
 	<artifactId>CucumberSelenium</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>21</maven.compiler.target>
+		<maven.compiler.source>21</maven.compiler.source>
 	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -39,7 +39,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.6.0</version>
+			<version>4.28.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -53,5 +53,18 @@
 			<artifactId>extentreports-cucumber7-adapter</artifactId>
 			<version>1.10.1</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+		    <groupId>io.github.bonigarcia</groupId>
+		    <artifactId>webdrivermanager</artifactId>
+		    <version>5.9.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.28</version> <!-- Use the latest version -->
+		    <scope>provided</scope>
+		</dependency>
+
 	</dependencies>
 </project>

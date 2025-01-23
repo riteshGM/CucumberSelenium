@@ -18,7 +18,7 @@ import io.cucumber.junit.CucumberOptions;
 //		"json:target/JSONReport/report.json",
 //		"junit:target/XMLReport/report.xml"},
 		plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
-		,tags = ("@DataTable")
+		,tags = ("@Now")
 		)
 public class CucumberRunnerClass {
 

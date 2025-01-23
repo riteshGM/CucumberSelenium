@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 //We do not want anyone to extend this class
 public final class WebDriverFactory {
@@ -20,6 +21,7 @@ public final class WebDriverFactory {
 	public static WebDriver getDriver() {
 		if(DriverManager.getDriver()==null) {
 			System.out.println("WebDriver was not yet initiated");
+			
 			WebDriver driver = new ChromeDriver();
 			//Remove this Step Later On Once Framework is Mattured
 			DriverManager.setDriver(driver);
